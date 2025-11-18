@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import Experiences from "@/components/Experiences";
 import { experiences } from "@/data/experiences";
-import { X } from "lucide-react";
+import { Facebook, Github, Linkedin, X } from "lucide-react";
 import ProjectCards from "@/components/ProjectCards";
 import { projects } from "@/data/projects";
 
@@ -23,6 +23,23 @@ export default function Home() {
               I'm a Frontend Developer seeking to
               contribute, learn and grow.
             </p>
+            <div className="sm:hidden flex gap-4">
+              <Link href="https://github.com/ModitTdr" >
+                <Github
+                  className="text-indigo-400"
+                />
+              </Link>
+              <Link href="https://www.linkedin.com/in/modittuladhar" >
+                <Linkedin
+                  className="text-blue-300"
+                />
+              </Link>
+              <Link href="https://www.facebook.com/modit.tuladhar">
+                <Facebook
+                  className="text-blue-400"
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
