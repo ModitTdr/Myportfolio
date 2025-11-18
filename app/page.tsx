@@ -20,7 +20,7 @@ export default function Home() {
             </h1>
             <hr className="text-muted-foreground" />
             <p className="font-semibold text-muted-foreground">
-              I'm a Frontend Developer with experience seeking to
+              I'm a Frontend Developer seeking to
               contribute, learn and grow.
             </p>
           </div>
