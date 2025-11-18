@@ -18,7 +18,7 @@ const ProjectCards = ({ project }: { project: ProjectCardProp }) => {
   return (
     <Link href={link} className="space-y-4 cursor-pointer">
       <div
-        className={`h-[320px] w-[320px] md:h-[420px] md:w-[420px] rounded-xs flex justify-center items-center border ${background} shadow-[0_0px_12px_rgba(0,0,0,0.1)] 
+        className={`min-h-[250px] min-w-[200px] md:h-[420px] md:w-[420px] rounded-xs flex justify-center items-center border ${background} shadow-[0_0px_12px_rgba(0,0,0,0.1)] 
         hover:shadow-white/40 duration-200 ease-in-out group`}
       >
         {
@@ -32,7 +32,7 @@ const ProjectCards = ({ project }: { project: ProjectCardProp }) => {
       </div>
       <div className="space-y-2">
         <h2 className='text-3xl font-bold'>{title}</h2>
-        <p className="text-sm text-muted-foreground">{description}</p>
+        <p className="text-sm text-muted-foreground max-w-xs md:max-w-sm">{description}</p>
       </div>
     </Link >
   )
