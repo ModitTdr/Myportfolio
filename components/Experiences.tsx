@@ -7,6 +7,7 @@ type ExperiencesType = {
   date: string;
   role: string;
   description: string;
+  works: string[];
   technologies: {
     name: string;
     src: string
@@ -22,7 +23,7 @@ const Experiences = ({ experiences }: experiencesProp) => {
       {
         experiences.map((experience: ExperiencesType) => (
           <div key={experience.title}>
-            <Link href={experience.link} className="space-y-4 group fadeUp">
+            <Link href={experience.link} className="group fadeUp space-y-3">
               <div>
                 <div className="flex flex-wrap items-baseline gap-x-6">
                   <h2 className="text-3xl font-bold group-hover:text-primary duration-150 ease-in-out">{experience.title}</h2>
@@ -31,7 +32,16 @@ const Experiences = ({ experiences }: experiencesProp) => {
                 <p className="text-xs text-muted-foreground">{experience.role}</p>
               </div>
               <div className="text-justify max-w-xs space-y-4">
-                <p>{experience.description}</p>
+                <div className="space-y-2 tracking-tight leading-5">
+                  <p>{experience.description}</p>
+                  <ul>
+                    {
+                      experience.works.map((work, index) => (
+                        <li key={index} className="text-xs text-muted-foreground list-disc ml-2">{work}</li>
+                      ))
+                    }
+                  </ul>
+                </div>
                 <div className="flex gap-2 items-center">
                   <p className="font-medium">Technologies Used:</p>
                   {

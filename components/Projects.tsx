@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <section className="min-h-screen bg-neutral-900 py-24 rounded-t-2xl z-10" data-scroll data-scroll-container data-scroll-speed=".1">
+    <section className="min-h-screen bg-neutral-900 py-24 rounded-t-2xl z-10" data-scroll data-scroll-container data-scroll-speed=".2">
       <motion.div
         initial={{ transform: "translateY(200px)", opacity: 0 }}
         whileInView={{

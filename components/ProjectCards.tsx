@@ -19,15 +19,14 @@ const ProjectCards = ({ project }: { project: ProjectCardProp }) => {
     <Link href={link} className="space-y-4 cursor-pointer">
       <div
         className={`min-h-[250px] min-w-[200px] md:h-[400px] md:w-[400px] rounded-xs flex justify-center items-center border ${background} shadow-[0_0px_12px_rgba(0,0,0,0.1)] 
-        hover:shadow-white/40 duration-200 ease-in-out group`}
+        hover:shadow-white/40 hover:scale-95 duration-200 ease-in-out group`}
       >
         {
           logo ? (
-            <img src={logo} width={140} height={140} alt={`${title} logo`} className="" />
+            <img src={logo} width={140} height={140} alt={`${title} logo`} className="group-hover:scale-125 duration-250 ease-in-out" />
           ) : (
-            <p className={`text-3xl font-bold text-${textColor}`}>{title}</p>
+            <p className={`text-3xl font-bold text-${textColor} group-hover:scale-125 duration-200 ease-in-out`}>{title}</p>
           )
-
         }
       </div>
       <div className="space-y-2">

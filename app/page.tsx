@@ -28,7 +28,7 @@ export default function Home() {
               <h2 className='text-4xl font-bold text-center'>Experiences</h2>
               <Experiences experiences={experiences} />
               {/* line */}
-              <div className="w-px h-[540px] bg-muted-foreground absolute left-0 top-[15%] fadeUp" />
+              <div className="w-px h-[635px] bg-muted-foreground absolute left-0 top-[15%] fadeUp" />
             </div>
           </section>
         </div >
