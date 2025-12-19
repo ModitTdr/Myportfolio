@@ -1,11 +1,11 @@
 export const projects = [
   {
-    link: "https://github.com/ModitTdr/chefMandu",
-    title: "Chefmandu",
-    description: "Chefmandu is a recipe management system that allows you to store and manage your favorite recipes.",
-    logo: "/chefMandu(logo).svg",
-    background: "bg-orange-300",
-    textColor: "black",
+    link: "https://uihaven-design.vercel.app/",
+    title: "Uihaven",
+    description: "Uihaven is a place to start planning your next design. It provides simple tools to pair fonts and create moodboards.",
+    logo: "",
+    background: "bg-gradient-to-b from-indigo-600 from-5% via-blue-500 via-100%",
+    textColor: "neutral-100",
     technologies: [
       { name: "nextjs", src: "/javascript.svg" },
       { name: "typescript", src: "/tailwindcss.svg" },
@@ -39,12 +39,12 @@ export const projects = [
     ]
   },
   {
-    link: "https://uihaven-design.vercel.app/",
-    title: "Uihaven",
-    description: "Uihaven is a place to start planning your next design. It provides simple tools to pair fonts and create moodboards.",
-    logo: "",
-    background: "bg-gradient-to-b from-indigo-600 from-5% via-blue-500 via-100%",
-    textColor: "neutral-100",
+    link: "https://github.com/ModitTdr/chefMandu",
+    title: "Chefmandu",
+    description: "Chefmandu is a recipe management system that allows you to store and manage your favorite recipes.",
+    logo: "/chefMandu(logo).svg",
+    background: "bg-orange-300",
+    textColor: "black",
     technologies: [
       { name: "nextjs", src: "/javascript.svg" },
       { name: "typescript", src: "/tailwindcss.svg" },
