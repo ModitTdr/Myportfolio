@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import SmoothScroll from "@/components/SmoothScroll";
 import HeroSection from "@/components/HeroSection";
 import Marquee from "@/components/Marquee";
+import SkillGrid from "@/components/SkillGrid";
 
 export default function Home() {
   return (
@@ -18,17 +19,21 @@ export default function Home() {
 
         <div className="-space-y-5">
           <Projects />
-          <Marquee />
+          <SkillGrid />
         </div>
 
         {/* Experiences */}
-        <div className="px-4 sm:px-12 min-h-screen">
+        <div className="px-4 sm:px-12 my-16">
           <section className="flex flex-col items-center justify-center">
-            <div className="relative space-y-24 pl-4">
+            <div className="relative space-y-16 pl-4">
               <h2 className='text-4xl font-bold text-center'>Experiences</h2>
-              <Experiences experiences={experiences} />
-              {/* line */}
-              <div className="w-px h-[635px] bg-muted-foreground absolute left-0 top-[15%] fadeUp" />
+              <div className="flex gap-5 items-center">
+                <div className="w-px h-[600px] bg-muted-foreground top-[15%] fadeUp" />
+                <div className="space-y-8">
+                  <Experiences experiences={experiences} />
+                </div>
+                {/* line */}
+              </div>
             </div>
           </section>
         </div >

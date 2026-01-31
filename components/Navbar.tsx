@@ -1,5 +1,5 @@
 import { Facebook, Github, Linkedin } from "lucide-react"
-import ThemeChanger from "./ThemeChanger"
+// import ThemeChanger from "./ThemeChanger"
 import Link from "next/link"
 
 const Navbar = () => {
@@ -28,9 +28,10 @@ const Navbar = () => {
             />
           </Link>
         </li>
-        <li>
-          <ThemeChanger />
-        </li>
+        {/*<li>
+           <ThemeChanger />
+         </li>
+         */}
       </ul>
     </nav>
   )

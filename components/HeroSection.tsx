@@ -29,13 +29,13 @@ const HeroSection = () => {
         className="space-y-3"
       >
         <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold">
-          Hello I'm <br />
+          Hello I&apos;m <br />
           <span className="text-primary">Modit Tuladhar</span>
         </h1>
         <hr className="text-muted-foreground" />
         <p className="font-semibold text-muted-foreground">
-          I'm a Frontend Developer seeking to
-          contribute, learn and grow.
+          I&apos;m a Frontend Developer from Nepal, seeking to
+          contribute, learn and grow and making my way to become a complete full stack developer.
         </p>
 
         <div className="sm:hidden flex gap-4">
