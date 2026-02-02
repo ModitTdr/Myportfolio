@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`${dmSans.variable} ${dmMono.variable} antialiased bg-background text-foreground`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          forcedTheme="dark"
           disableTransitionOnChange
         >
           {children}
