@@ -30,7 +30,7 @@ const ProjectCards = ({ project }: { project: ProjectCardProp }) => {
         }
       </div>
       <div className="space-y-2">
-        <h2 className='text-3xl font-bold'>{title}</h2>
+        <h2 className='text-3xl font-bold text-foreground'>{title}</h2>
         <p className="text-sm text-muted-foreground max-w-xs md:max-w-sm">{description}</p>
       </div>
     </Link >
